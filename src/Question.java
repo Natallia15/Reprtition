@@ -2,6 +2,16 @@ import java.util.Random;
 
 public class Question {
     public static void main(String[] args) {
+        int w = 2;
+        if (w>7) {
+            System.out.println("больше 7");
+        }
+        if (w>3){
+            System.out.println("больше 3");
+        }
+        if ( w>3 && w<7){
+            System.out.println("от 3 до 7");
+        }
 
         String str = "один";
         switch (str) {
@@ -11,7 +21,7 @@ public class Question {
         }
 //        default:
 //        System.out.println("ошибка");
-        int u = 0;
+        /*int u = 0;
         String str1 = "while";
         switch (str1) {
             case "while":
@@ -26,16 +36,18 @@ public class Question {
                     u++;
                 }
                 break;
-        }
+        }*/
 
-        int [][][][][] array = new int [2][2][2][2][2];
-        for (int i = 0; i< array.length; i++){
-            for (int i2 = 0; i2< array[i].length; i2++){
-                for (int i3 = 0; i3< array[i][i2].length; i3++){
-                    for (int i4 = 0; i4< array[i][i2][i3].length; i4++){
-                        for (int i5 = 0; i4< array[i][i2][i3][i4].length; i5++)
-                       // array[i][i2][i3][i4][i5] = new Random(nextInt(20));
-                        System.out.println(array[i][i2][i3][i4][5]);
+        int [][][][][] array = new int[2][2][2][2][2];
+        for (int i = 0; i< array.length; i++) {
+            for (int i2 = 0; i2 < array[i].length; i2++) {
+                for (int i3 = 0; i3 < array[i][i2].length; i3++) {
+                    for (int i4 = 0; i4 < array[i][i2][i3].length; i4++) {
+                        for (int i5 = 0; i5 < array[i][i2][i3][i4].length; i5++) {
+                            array[i][i2][i3][i4][i5] = new Random().nextInt(20);
+                           System.out.print(array[i][i2][i3][i4][i5]+" ");
+                        }
+                        //System.out.println();
                     }
                 }
             }
@@ -75,17 +87,9 @@ public class Question {
         k7 = a++;
         System.out.println(k1+" ,"+k2+" ,"+k3+" ,"+k4+" ,"+k5+" ,"+k6+" ,"+k7);
 
-        int w = 5;
 
-        if (w>7) {
-            System.out.println("больше 7");
-        }
-        if (w>3){
-            System.out.println("больше 3");
-            }
-        if ( w>3 && w<7){
-            System.out.println("от 3 до 7");
-        }
+
+
     }
 
 
